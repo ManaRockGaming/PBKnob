@@ -1,0 +1,102 @@
+<DOCTYPE HTML>
+
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Knob Landing Page</title>
+<link rel="stylesheet" href="PBStyles.css">
+</head>
+<body>
+
+    <!-- Main Menu Title -->
+    <header>
+        <div class="toptitle">
+            <h1>PB Knob Registrar</h1>
+        </div>
+    </header>
+
+    <!-- Main Menu Navigation -->
+    <navigation>        
+        <img src="images/img_batteryline.jpg" alt="Palmetto Battery Cannon Line" width="100%">
+    </navigation>
+
+    <table class="signin">
+        <tr>
+            <td width = "40%"><img src="images/img_big_red_grey.jpg" width="100%" alt="Big Red Flag"></td>
+            <td>
+                <h1>What Is This Website?</h1>
+                <p>
+                    This is an unofficial website for the Freshman Class of 2025, from Palmetto Battery. This website has no official connection, recognition, or endorsement from the Citadel, the South Carolina Corp of Cadets, 5th Battalion, the Palmetto Battery, or any other organization. On this website you will find the contact information of all the knobs in Palmetto Battery, along with official and unofficial Palmetto Battery events. If you are a TAC, an employee of The Citadel, upperclassman, or knob from another company you can request access to this website from Cadet Recruit Rom (crom@citadel.edu). Cadet Recruit Rom will not share any information unless the situation is dire enough where people can be hurt, injured, or helped.
+                </p>
+
+                <h1>Click Below To Enter</h1>
+                <p>
+                    By accessing this website you agree to only use it for moral, ethical, and lawful actions. Immoral, unethical, and/or illegal actions may cause you to be unable to access this website. Your information which you provided to this website will not be shared, to anyone without access to this site.
+                </p>
+
+                <SCRIPT>
+                    function passWord() 
+                    {
+                        var testV = 1;
+                        var pass1 = prompt('Please Enter The Password',' ');
+                        while (testV < 3) 
+                        {
+                            if (!pass1)
+                                history.go(-1);
+                            if (pass1.toLowerCase() == "trial of job") 
+                            {
+                                alert('And let us not grow weary of doing good, for in due season we will reap, if we do not give up. GALATIANS 6:9');
+                                window.open('KnobHome.html');
+                                break;
+                            }
+                            testV+=1;
+                            var pass1 = prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+                        }
+                
+                        if (pass1.toLowerCase()!="password" & testV ==3)
+                            history.go(-1);
+                            return " ";
+                    }
+                </SCRIPT>
+                <CENTER>
+                    <FORM>
+                        <input type="button" value="Enter Website Here" onClick="passWord()">
+                    </FORM>
+                </CENTER>
+
+            </td>
+            
+            
+    
+
+
+
+    </table>
+
+    <!-- Footer -->
+    <footer>
+        <table class="registrar">
+            <tr>
+                <th style="readme" colspan="4">
+                    <p style = "font-size: 10px;">
+                        This is an unofficial website for the Freshman Class of 2025, from Palmetto Battery. This website has no official connection, recognition, or endorsement from The Citadel, the South Carolina Corp of Cadets, 5th Battalion, the Palmetto Battery, or any other organization.
+
+                        <br>
+                        <br>
+
+                        Website Programmed By: Cadet Recruit Rom, Conor
+
+                        <br>
+                        <br>
+
+                        Domain Name Owned By: Cadet Recruit Rom, Conor
+
+                    </p>
+                </th>
+            </tr>
+        </table>
+
+    </footer>
+
+</body>
+</html>
