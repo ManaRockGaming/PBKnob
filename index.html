@@ -5,6 +5,7 @@
 <meta charset="utf-8" />
 <title>Knob Landing Page</title>
 <link rel="stylesheet" href="PBStyles.css">
+<script defer src="login-page.js"></script>
 </head>
 <body>
 
@@ -19,32 +20,47 @@
     <navigation>        
         <img src="images/img_batteryline.jpg" alt="Palmetto Battery Cannon Line" width="100%">
     </navigation>
-
-    <table class="signin">
+    
+    <!-- Main Body Text & Sign In -->
+    <table class="bodytext">
         <tr>
-            <td width = "40%"><img src="images/img_big_red_grey.jpg" width="100%" alt="Big Red Flag"></td>
+            <!-- Sign In -->
+            <td style = "text-align:center" width = "40%">
+                <h1 id="login-header">PB Knob Login</h1>
+                
+                <img src="images/img_battery_icon.png" alt="Palmetto Battery Page Icon" width="15%">
+                
+                <p></p>
+
+                <form id="login-form">
+                  <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+                  <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+                  <input type="submit" value="Login" id="login-form-submit">
+                </form>
+
+                <div id="login-error-msg-holder">
+                    <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+                </div>
+            </td>
+            
+            <!-- What Is This Website / Terms Of Agreement-->
             <td>
                 <h1>What Is This Website?</h1>
                 <p>
                     This is an unofficial website for the Freshman Class of 2025, from Palmetto Battery. This website has no official connection, recognition, or endorsement from the Citadel, the South Carolina Corp of Cadets, 5th Battalion, the Palmetto Battery, or any other organization. On this website you will find the contact information of all the knobs in Palmetto Battery, the names of the upperclassman, and the PB weekly flag roster.
                 </p>
 
-                <h1>Enter The Site</h1>
+                <h1>Terms Of Agreement / Password*</h1>
                 <p>
                     By accessing this website you agree to only use it for moral, ethical, and lawful actions. Immoral, unethical, and/or illegal actions may cause you to be unable to access this website.
+        
+                </br>
+                </br>
+
+                    If you are a TAC, an employee of The Citadel, or upperclassman you can request a username and password from Cadet Private Rom by emailing (crom@citadel.edu). If you violate the above agreement, Cadet Private Rom has the right to remove your access from this website.
                 </p>
-
-
-
-
-                <button type="button" onclick="window.open('https://www.pbknob.com/PBHome.html','_blank')">Enter Site Here!</button>
             </td>
-            
-            
-    
-
-
-
+        </tr>
     </table>
 
     <!-- Footer -->
@@ -58,18 +74,22 @@
                         <br>
                         <br>
 
-                        Website Programmed By: Cadet Recruit Rom, Conor
+                        * = Upperclassman Requested
 
                         <br>
                         <br>
 
-                        Domain Name Owned By: Cadet Recruit Rom, Conor
+                        Website Programmed / Domain Named Owned By: Cadet Private Rom
+
+                        <br>
+                        <br>
+
+                        Cadet Private Rom's Email: crom@citadel.edu
 
                     </p>
                 </th>
             </tr>
         </table>
-
     </footer>
 
 </body>
