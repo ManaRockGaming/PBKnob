@@ -14,7 +14,7 @@ loginButton.addEventListener("click", (e) => {
 
     if (username === "freshman" && password === "guest1") {
         alert("You have successfully logged in.");
-        window.open('PBHome.11022021.html').focus();
+        window.open('https://www.pbknob.com/PBHome.11022021.html','_blank').focus();
         //window.open('https://www.pbknob.com/PBHome.11022021.html','_blank').focus();
     }
     if (username === "sophmore" && password === "guest2") {
