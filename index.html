@@ -26,38 +26,20 @@
         <tr>
             <!-- Sign In -->
             <td style = "text-align:center" width = "40%">
-                <h1 id="login-header">PB Knob Login</h1>
                 
-                <img src="images/img_battery_icon.png" alt="Palmetto Battery Page Icon" width="15%">
-                
-                <p></p>
-
-                <form id="login-form">
-                  <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
-                  <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
-                  <input type="submit" value="Login" id="login-form-submit">
-                </form>
-
-                <div id="login-error-msg-holder">
-                    <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
-                </div>
-
-
                 <!-- Start Bravenet.com Service Code -->
-<div style="text-align: right; width:210px; padding:5px;font: normal 13px arial;">
-    <form action="https://pub16.bravenet.com/passwd/show.php" method="post" target="_top">
-      <input type="hidden" name="usernum" value="1322958821">
-      <h3 style="text-align:center;margin:5px;">Login for Access</h3>
-      <div style="padding:5px;">Username: <input type="text" name="uname" size="15" maxlength="30" style="width: 100px;padding:5px;border-radius:5px;border:1px solid #ccc;"></div>
-      <div style="padding:5px;">Password: <input type="password" name="passwd" size="15" maxlength="30" style="width: 100px;padding:5px;border-radius:5px;border:1px solid #ccc;"></div>
-      <div style="padding:5px;"><a style="color:#00b" href="https://pub16.bravenet.com/passwd/requestpwd.php?usernum=1322958821" target="_top">Request an Account</a> &nbsp; <input type="submit" name="submit" value="Login" style="border-radius:5px;padding:5px 10px;background:#000;border:0;color:#fff;"></div>
-      <div style="padding:5px; font-size:11px;"><a href="https://www.bravenet.com" style="color:#00b;">Powered by Bravenet</a></div>
-    </form>
-  </div>
-  <!-- End Bravenet.com Service Code -->
-
-
-
+                    <div style="text-align: right; width:210px; padding:5px;font: normal 13px arial;">
+                        <form action="https://pub16.bravenet.com/passwd/show.php" method="post" target="_top">
+                            <input type="hidden" name="usernum" value="1322958821">
+                            <h3 style="text-align:center;margin:5px;">Login for Access</h3>
+                            <div style="padding:5px;">Username: <input type="text" name="uname" size="15" maxlength="30" style="width: 100px;padding:5px;border-radius:5px;border:1px solid #ccc;"></div>
+                            <div style="padding:5px;">Password: <input type="password" name="passwd" size="15" maxlength="30" style="width: 100px;padding:5px;border-radius:5px;border:1px solid #ccc;"></div>
+                            <div style="padding:5px;"><a style="color:#00b" href="https://pub16.bravenet.com/passwd/requestpwd.php?usernum=1322958821" target="_top">Request an Account</a> &nbsp; <input type="submit" name="submit" value="Login" style="border-radius:5px;padding:5px 10px;background:#000;border:0;color:#fff;"></div>
+                            <div style="padding:5px; font-size:11px;"><a href="https://www.bravenet.com" style="color:#00b;">Powered by Bravenet</a></div>
+                        </form>
+                    </div>
+                <!-- End Bravenet.com Service Code -->
+                
             </td>
             
             <!-- What Is This Website / Terms Of Agreement-->
@@ -109,7 +91,7 @@
         </table>
     </footer>
 
-    
+    <!-- Stops Most Common People From Inspecting Code -->
     <script>
         var isNS = (navigator.appName == "Netscape") ? 1 : 0;
         if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
