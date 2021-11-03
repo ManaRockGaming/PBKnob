@@ -7,9 +7,14 @@ loginButton.addEventListener("click", (e) => {
     const username = loginForm.username.value;
     const password = loginForm.password.value;
 
+    //<html oncontextmenu="return false"> 
+    //</html>
+
+    
+
     if (username === "freshman" && password === "guest1") {
         alert("You have successfully logged in.");
-        window.open('PBHome.11022021.html','_blank').focus();
+        window.open('PBHome.11022021.html').focus();
         //window.open('https://www.pbknob.com/PBHome.11022021.html','_blank').focus();
     }
     if (username === "sophmore" && password === "guest2") {
