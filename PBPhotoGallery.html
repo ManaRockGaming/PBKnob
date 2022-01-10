@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>PB Rosters</title>
+<title>Photo Gallery</title>
 <style>
 
 /*
@@ -95,31 +95,48 @@ body
         
 
 
-.button
+
+.photoLibrary
 {
-    width: 100%;
     background-color: #5672e1;
-    text-align: center;
 }
 
-.button th
+.photoLibrary th
 {
     background-color: white;
-    font-size: 42px;
-    padding: 16px;
     color: black;
     border: 5px solid black;
 }
 
-.buttonImage
+.photoLibrary td
 {
-    width: 10%;
-    background:#3a159c;
+    text-align: center;
+    width: 50%;
+    background:#5672e1;
     opacity:0.45;
     z-index: -1;
 }
 
 
+.photoGallery
+{
+ 
+    background-color: #5672e1;
+}
+
+.photoGallery th
+{
+    width: 33%;
+    background-color: white;
+    color: black;
+    border: 5px solid black;  
+}
+
+.photoGallery img {
+    width: 100%;
+    height: 100%; 
+    object-fit: contain;
+}
 
 
 .footer {
@@ -153,59 +170,92 @@ body
                 </div>
         </div>
     </navigation>
-    
-    <!-- Flag Roster -->
-    <table class="button">
-        <tr>
-            <th>
-                Flag Roster
-            </th>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://citadelits-my.sharepoint.com/:x:/g/personal/crom_nation_citadel_edu/EaBQzBh2tAhFpRcTNtaK2sAB0cj5xFxvrHKeXJ54nW-A2Q" target="_blank">
-                    <img class="buttonImage" src="images/folder.png">
-                </a>
-            </td>
-        </tr>
-    </table>
-    
-    </br>
 
-    <!-- Platoon Roster -->
-    <table class="button">
+    <!-- Image Header -->
+    <header>
+        <img class="titleImage" src="images/img_platoon_roster.jpg" alt="Palmetto Battery Cannon Line" width="100%">
+    </header>
+    
+    <!-- Palmetto Battery Photo Library Folder -->
+    <table class="photoLibrary" style="width: 100%">
         <tr>
-            <th>
-                Platoon Roster
+            <th colspan="4">
+                <p style = "font-size: 30px;">
+                    Palmetto Battery Photo Folder
+                </p>
             </th>
         </tr>
+        
         <tr>
             <td>
-                <a href="https://docs.google.com/spreadsheets/d/12FtyrOh-yDriwRn1XWAp3i4ZDygtG7sW/edit?usp=sharing&ouid=114005350361534090100&rtpof=true&sd=true" target="_blank">
-                    <img class="buttonImage" src="images/folder.png">
+                <a href="https://drive.google.com/drive/folders/1aWq5BPWxixyl0bsLKsP1lbNX20eBoLFf?usp=sharing" target="_blank">
+                    <img class="photoLibraryImage" src="images/folder.png">
                 </a>
             </td>
         </tr>
-    </table>
+    </table>    
+    
 
     </br>
 
-    <!-- Training Schedule -->
-    <table class="button">
+    <!-- Palmetto Battery Photo Gallery -->
+    <table class="photoGallery">
+        <tr>
+            <th colspan="4">
+                <p style = "font-size: 30px;">
+                    Palmetto Battery Photo Gallery 21-22
+                </p>
+            </th>
+        </tr>
+    
         <tr>
             <th>
-                Training Schedule
+                <img src="images_gallery/img_gallery_kelly_cup1.png">
+                <p>Kelly Cup 1</p>
+            </th>
+            <th>
+                <img src="images_gallery/img_gallery_kelly_cup2.png">
+                <p>Kelly Cup 2</p>
+            </th>
+            <th>
+                <img src="images_gallery/img_gallery_kelly_cup3.png">
+                <p>Kelly Cup 3</p>
             </th>
         </tr>
         <tr>
-            <td>
-                <a href="http://www.citadel.edu/root/operations-and-training/training-schedules" target="_blank">
-                    <img class="buttonImage" src="images/folder.png">
-                </a>
-            </td>
+            <th>
+                <img src="images_gallery/img_gallery_parents_week1.png">
+                <p>Parent's Day 1</p>
+            </th>
+            <th>
+                <img src="images_gallery/img_gallery_parents_day_parade_1.png">
+                <p>Parent's Day Parade 1</p>
+            </th>
+            <th>
+                <img src="images_gallery/image_gallery_ring_ceremony1.png">
+                <p>Ring Ceremony 1</p>
+            </th>
+        </tr>
+
+        <tr>
+            <th>
+                <img src="images_gallery/img_gallery_clerk.png">
+                <p>Cadre Period 1</p>
+            </th>
+            <th>
+                <img src="images_gallery/img_gallery_matriculation1.png">
+                <p>Matriculation Day 1</p>
+            </th>
+            <th>
+                <img src="images_gallery/image_gallery_ring_ceremony2.png">
+                <p>Ring Ceremony 2</p>
+            </th>
         </tr>
     </table>
-   
+
+
+
+    </br>   
     <!-- Footer -->
     <footer>
         <table class="footer">

@@ -1,0 +1,435 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Knob Register</title>
+<style>
+
+/*
+#93c7e3 = Light Blue
+#5672e1 = Blue
+#3a159c = Dark Blue
+#0f0d11 = Black
+#d85452 = Red
+#eeb8b4 = Faded Red
+*/
+
+body 
+{
+    margin: 0;
+    font-family: Gunplay;
+    background:#5672e1;
+    color: white;
+
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+.titleImage {
+            background:#3a159c;
+            opacity:0.45;
+            z-index: -1;
+
+            position: relative;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            }
+
+
+
+.dropbtn    {
+            background-color: #3498DB;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            }
+
+.dropbtn:hover, .dropbtn:focus  {
+                                background-color: #2980B9;
+                                }
+
+.dropdown   {
+            position: fixed;
+            display: inline-block;
+            }
+
+.dropdown-content   {
+                    display: none;
+                    position: absolute;
+                    background-color: #f1f1f1;
+                    min-width: 160px;
+                    overflow: auto;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    z-index: 100;
+                    }
+
+.dropdown-content a {
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                    }
+
+.dropdown a:hover   {
+                    background-color: #ddd;
+                    }
+
+.show   {
+        display: block;
+        }
+
+
+
+
+
+
+
+        
+
+
+
+.register
+{
+    width: 100%;
+    background-color: #5672e1;
+}
+
+.register th
+{
+    background-color: white;
+    color: black;
+    border: 5px solid black;
+}
+
+
+
+
+
+
+.footer {
+        border-spacing: 10px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: 1px solid black;
+
+        background-color: #3a159c;
+        }
+
+@font-face { font-family: Gunplay; src: url('gunplay rg.ttf'); } 
+
+</style>
+</head>
+<body>
+    
+
+    <!-- Drop Down Naviagtion -->
+    <navigation>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menu</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="PBKnobs.html">Freshmen Register</a>
+                    <a href="PBUpperclass.html">Upperclass Register</a>
+                    <a href="PBPhotoGallery.html">Photo Gallery</a>
+                    <a href="PBRosters.html"> PB Rosters </a>
+                </div>
+        </div>
+    </navigation>
+
+    <!-- Image Header -->
+    <header>
+        <img class="titleImage" src="images/img_platoon_roster.jpg" alt="Palmetto Battery Cannon Line" width="100%">
+    </header>
+    
+    <!-- Knob Register -->
+    <table class="register">
+        <tr>
+            <th colspan="4">
+                <p style = "font-size: 30px;">
+                    PB Knob Register
+                </p>
+            </th>
+        </tr>
+        
+        <tr>
+            <th>
+                <img src = "images_knobs/Cadet_F1.jpg">
+                <h1>Bradrick</h1>
+                <p>RM 4424</p>
+            </th>
+
+            <th>
+                <img src = "images_knobs/Cadet_F2.PNG" />
+                <h1>Cappello</h1>
+                <p>RM 4419</p>
+            </th>
+
+            <th>
+                <img src = "images_knobs/Cadet_F3.PNG" />
+                <h1>Cont</h1>
+                <p>4419</p>
+            </th>
+
+            <th>
+                <img src = "images_knobs/Cadet_F4.PNG">
+                <h1>Davis</h1>
+                <p>RM 4427</p>
+            </th>
+        </tr>
+
+        <tr>
+            <th>
+                <img src = "images_knobs/Cadet_F5.PNG">
+                <h1>Dill</h1>
+                <p>RM 4422</p>
+            </th>
+
+            <th>
+                <img src = "images/img_default_cadet.jpg">
+                <h1>Forrester</h1>
+                <p>RM 4417</p>
+            </th>
+
+            <th>
+                <img src = "images_knobs/Cadet_F7.jpg">
+                <h1>Goldenstein</h1>
+                <p>RM 4418</p>
+            </th>
+
+            <th>
+                <img src = "images_knobs/Cadet_F8.PNG">
+                <h1>Hanna</h1>
+                <p>RM 4424</p>
+            </th>
+        </tr>
+
+        <tr>
+            <th>
+                <img src = "images_knobs/Cadet_F9.PNG">
+                <h1>Holmes</h1>
+                <p>RM 4425</p>
+            </th>
+
+            <th>
+                <img src = "images_knobs/Cadet_F10.jpg">
+                <h1>Houston</h1>
+                <p>RM 4425</p>
+            </th>
+
+            <th>
+                <img src = "images_knobs/Cadet_F11.PNG">
+                <h1>Johnson</h1>
+                <p>RM 4426</p>
+            </th>
+
+            <th>
+                <img src = "images_knobs/Cadet_F12.jpg">
+                <h1>Kmon</h1>
+                <p>RM 4426</p>
+            </th>
+        </tr>
+
+        <tr>
+            <th>
+                <img src = "images_knobs/Cadet_F13.jpg">
+                <h1>Loverde</h1>
+                <p>RM 4419</p>
+            </th>
+
+            <th>
+                <img src = "images_knobs/Cadet_F14.jpg">
+                <h1>Melnikov</h1>
+                <p>RM 4418</p>
+            </th>
+
+            <th>
+                <img src = "images/img_default_cadet.jpg">
+                <h1>Morales</h1>
+                <p>RM 4421</p>
+            </th>
+
+            <th>
+                <img src = "images_knobs/Cadet_F16.jpg">
+                <h1>Mutua</h1>
+                <p>RM 4423</p>
+            </th>
+        </tr>
+
+        <tr>
+    
+
+            
+        </tr>
+
+        <tr>
+            <th>
+                <img src = "images_knobs/Cadet_F17.jpg">
+                <h1>Paul</h1>
+                <p>RM 4417</p>
+            </th>
+
+            <th>
+                <img src = "images_knobs/Cadet_F18.jpg">
+                <h1>Prebor</h1>
+                <p>RM 4419</p>
+            </th>
+
+            <th>
+                <img src = "images_knobs/Cadet_F19.jpg">
+                <h1>Richards</h1>
+                <p>RM 4416</p>
+            </th>
+
+            <th>
+                <img src = "images_knobs/Cadet_F20.jpg">
+                <h1>Rom</h1>
+                <p>RM 4416</p>
+            </th>
+        </tr>
+
+        <tr>
+            <th>
+                <img src = "images_knobs/Cadet_F22.PNG">
+                <h1>Souders</h1>
+                <p>RM 4415</p>
+            </th>
+
+            <th>
+                <img src = "images_knobs/Cadet_F23.PNG">
+                <h1>Timberlake</h1>
+                <p>RM 4415</p>
+            </th>
+
+            <th>
+                <img src = "images_knobs/Cadet_F21.jpg">
+                <h1>Tope</h1>
+                <p>RM 4423</p>
+            </th>
+
+            <th>
+                <img src = "images/img_default_cadet.jpg">
+                <h1>Uraizee</h1>
+                <p>RM 4421</p>
+            </th>
+        </tr>
+
+        <tr>
+            <th>
+                <img src = "images_knobs/Cadet_F25.PNG">
+                <h1>White</h1>
+                <p>RM 4422</p>
+            </th>
+        </tr>
+        
+    </table>
+
+    </br>
+
+    <!-- The Fallen Register -->
+    <table class="register" style="background-color: #5672e1">
+        <tr>
+            <th colspan="4">
+                <p style = "font-size: 30px;">
+                    The Fallen
+                </p>
+            </th>
+        </tr>
+
+        <tr>
+            <th>
+                <img src = "images/img_dead_cadet.jpg">
+                <h1>Bates</h1>
+                <p>Excommunicated</p>
+                <p>Killed In Action</p>
+            </th>
+
+            <th>
+                <img src = "images/img_dead_cadet.jpg">
+                <h1>Dean</h1>
+                <p>Excommunicated</p>
+                <p>Killed In Action</p>
+            </th>
+
+            <th>
+                <img src = "images/img_dead_cadet.jpg">
+                <h1>Durant</h1>
+                <p>Excommunicated</p>
+                <p>Killed In Action</p>
+            </th>
+
+            <th>
+                <img src = "images/img_dead_cadet.jpg">
+                <h1>Herbst</h1>
+                <p>Excommunicated</p>
+                <p>Killed In Action</p>
+            </th>
+        </tr>
+
+        <tr>
+            <th>
+                <img src = "images/img_dead_cadet.jpg">
+                <h1>Martin</h1>
+                <p>Extra Excommunicated</p>
+                <p>Killed In Action</p>
+            </th>
+        </tr>
+    </table>
+
+    </br>   
+    <!-- Footer -->
+    <footer>
+        <table class="footer">
+            <tr>
+                <td style="width: 40%">
+                    <h2>About This Website</h2>
+                    <p>This website was created by lead programmer and developer Cadet Rom. This website's domain and existance is funded by Cadet Rom, through the use of his own personal funds and the small amount of money gained from website ads.</p>
+                    <p>Contact Email: crom@citadel.edu</p>
+                </td>
+                <td style="width: 60%">
+
+                </td>
+            </tr>
+        </table>
+    </footer>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+<!-- Drop Down Menu Script -->
+<script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+</script>
+</html>

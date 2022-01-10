@@ -3,136 +3,361 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>Knob Landing Page</title>
-<link rel="stylesheet" href="PBStyles.css">
-<script defer src="login-page.js"></script>
+<title>Knob Home</title>
+<style>
+
+/*
+#93c7e3 = Light Blue
+#5672e1 = Blue
+#3a159c = Dark Blue
+#0f0d11 = Black
+#d85452 = Red
+#eeb8b4 = Faded Red
+*/
+
+body 
+{
+    margin: 0;
+    font-family: Gunplay;
+    background-color: #5672e1;
+    color: black;
+
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+    
+
+
+
+.dropbtn    {
+            background-color: #3498DB;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            }
+
+.dropbtn:hover, .dropbtn:focus  {
+                                background-color: #2980B9;
+                                }
+
+.dropdown   {
+            position: fixed;
+            display: inline-block;
+            }
+
+.dropdown-content   {
+                    display: none;
+                    position: absolute;
+                    background-color: #f1f1f1;
+                    min-width: 160px;
+                    overflow: auto;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    z-index: 100;
+                    }
+
+.dropdown-content a {
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                    }
+
+.dropdown a:hover   {
+                    background-color: #ddd;
+                    }
+
+.show   {
+        display: block;
+        }
+
+
+
+
+
+
+.signIn {
+        position: fixed;
+        right: 0.000001%;
+        background-color: #3498DB;
+        }
+
+.signOut    {
+            position: fixed;
+            right: 1%;
+            }
+
+
+
+
+
+
+
+
+
+.titleText  {
+            font-family: GunMetl;
+            font-size: 7rem;
+            color: black;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 25%;
+            position: absolute;
+            }
+
+.titleSubText   {
+                font-family: GunMetl;
+                font-size: 4rem;
+                color: black;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 45%;
+                position: absolute;
+                text-align: center;
+                }
+
+.titleVideo {
+            width: 100%;
+            object-fit: cover;
+            position: relative;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+            background:#3a159c;
+            opacity:0.45;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bodytext   {
+            border-spacing: 10px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border: 1px solid black;
+
+            background-color: #3a159c;
+            }
+
+.twoImageBox    {
+                width: 100%;
+                border-spacing: 10px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                padding-left: 10px;
+                padding-right: 10px;
+                border: 1px solid black;
+
+                background-color: #5672e1;
+
+                text-align: center;
+                }
+
+.footerBox  {
+            border-spacing: 10px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border: 1px solid black;
+
+            background-color: #3a159c;
+            }
+
+
+@font-face { font-family: Gunplay; src: url('gunplay rg.ttf'); } 
+@font-face { font-family: Gunplay3D; src: url('gunplay 3d.ttf'); } 
+@font-face { font-family: GunMetl; src: url('gunmetl.ttf'); } 
+
+
+
+
+</style>
 </head>
 <body>
 
-    <!-- Main Menu Title -->
-    <header>
-        <div class="toptitle">
-            <h1>PB Knob</h1>
+        <!-- Drop Down Naviagtion -->
+        <navigation>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Menu</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="index.html">Home</a>
+                        <a href="PBKnobs.html">Freshmen Register</a>
+                        <a href="PBUpperclass.html">Upperclass Register</a>
+                        <a href="PBPhotoGallery.html">Photo Gallery</a>
+                        <a href="PBRosters.html"> PB Rosters </a>
+                    </div>
+            </div>
+
+
+    
+
+    <div class="signIn">
+        <!-- Start Bravenet.com Service Code -->
+        <div style="text-align: right; width:210px; padding:5px;font: normal 13px arial;">
+            <form action="https://pub16.bravenet.com/passwd/show.php" method="post" target="_top">
+                <input type="hidden" name="usernum" value="1322958821">
+                <div style="padding:5px;">Username: <input type="text" name="uname" size="15" maxlength="30" style="width: 100px;padding:5px;border-radius:5px;border:1px solid #ccc;"></div>
+                <div style="padding:5px;">Password: <input type="password" name="passwd" size="15" maxlength="30" style="width: 100px;padding:5px;border-radius:5px;border:1px solid #ccc;"></div>
+                <div style="padding:5px;"><a style="color: white" href="https://pub16.bravenet.com/passwd/requestpwd.php?usernum=1322958821" target="_top">Request an Account</a> &nbsp; <input type="submit" name="submit" value="Login" style="border-radius:5px;padding:5px 10px;background:#000;border:0;color:#fff;"></div>
+            </form>
         </div>
+    <!-- End Bravenet.com Service Code -->
+    </div>
+  
+
+
+
+    <!-- Main Title & Video -->
+    <header>
+        <video class="titleVideo" autoplay loop muted poster="images/img.battery_firing.jpg">
+            <source src="Video.CannonPulling2022.mp4" type="video/mp4">
+        </video>
+
+        <h1 class="titleText">PB Knob</h1>
+        <h1 class="titleSubText">The Unofficial Palmetto Battery Website</h1>
     </header>
 
-    <!-- Main Menu Navigation -->
-    <navigation>        
-        <img src="images/img_batteryline.jpg" alt="Palmetto Battery Cannon Line" width="100%">
-    </navigation>
-    
-    <!-- Main Body Text & Sign In -->
-    <table class="bodytext">
-        <tr>
-            <!-- Sign In -->
-            <td style = "text-align:center" width = "20%">
-                
-                <!-- Start Bravenet.com Service Code -->
-                    <div style="text-align: right; width:210px; padding:5px;font: normal 13px arial;">
-                        <form action="https://pub16.bravenet.com/passwd/show.php" method="post" target="_top">
-                            <input type="hidden" name="usernum" value="1322958821">
-                            <h3 style="text-align:center;margin:5px;">Login for Access</h3>
-                            <div style="padding:5px;">Username: <input type="text" name="uname" size="15" maxlength="30" style="width: 100px;padding:5px;border-radius:5px;border:1px solid #ccc;"></div>
-                            <div style="padding:5px;">Password: <input type="password" name="passwd" size="15" maxlength="30" style="width: 100px;padding:5px;border-radius:5px;border:1px solid #ccc;"></div>
-                            <div style="padding:5px;"><a style="color:#00b" href="https://pub16.bravenet.com/passwd/requestpwd.php?usernum=1322958821" target="_top">Request an Account</a> &nbsp; <input type="submit" name="submit" value="Login" style="border-radius:5px;padding:5px 10px;background:#000;border:0;color:#fff;"></div>
-                            <div style="padding:5px; font-size:11px;"><a href="https://www.bravenet.com" style="color:#00b;">Powered by Bravenet</a></div>
-                        </form>
-                    </div>
-                <!-- End Bravenet.com Service Code -->
 
+
+
+
+    <!-- Main Body -->
+    <table class="bodytext">
+        
+        <!-- What Is This Website? -->
+        <tr>
+            <td rowspan="3">
+                <img style="width: 100%; background:#93c7e3; opacity:0.65;" src="images/img_marching_through_time.JPG" alt="Marching Through Time By Bob Graham">
             </td>
-            
-            <!-- What Is This Website / Terms Of Agreement-->
             <td>
                 <h1>What Is This Website?</h1>
                 <p>
-                    This is an unofficial website for the Freshman Class of 2025, from Palmetto Battery. This website has no official connection, recognition, or endorsement from the Citadel, the South Carolina Corp of Cadets, 5th Battalion, the Palmetto Battery, or any other organization. On this website you will find the contact information of all the knobs in Palmetto Battery, the names of the upperclassman, and the PB weekly flag roster.
+                    This is an unofficial website for the Freshmen Class of 2025, from Palmetto Battery. This website has no official connection, recognition, or endorsement from the Citadel, the South Carolina Corp of Cadets, 5th Battalion, the Palmetto Battery, or any other organization. This website was coded for the ease of access to the weekly Palmetto Battery Flag Rooster.
                 </p>
+            </td>
+        </tr>
 
-                <h1>Terms Of Agreement / Password*</h1>
+        <!-- Terms Of Agreement -->
+        <tr>
+            <td>
+                <h1>Terms of Agreement</h1>
                 <p>
-                    By accessing this website you agree to only use it for moral, ethical, and lawful actions. Immoral, unethical, and/or illegal actions may cause you to be unable to access this website.
-        
-                </br>
-                </br>
-
-                    If you are a TAC, an employee of The Citadel, or upperclassman you can request a username and password by hitting the "Request An Account" button. If you violate the above agreement, Cadet Private Rom has the right to remove your access from this website.
+                    By accessing this website you agree to only use it for moral, ethical, and lawful actions. Immoral, unethical, and/or illegal actions may cause you to be unable to access this website. If you violate this agreement, you may be prevented by accessing this website.    
                 </p>
+            </td>
+        </tr> 
+
+        <!-- Palmetto Battery Flag Rooster -->
+        <tr>
+            <td width="75%">
+                <h1>Palmetto Battery Flag Rooster</h1>
+                <p>
+                    Along with the Palmetto Battery's mission for the operation of cannons for Citadel event, Palmetto Battery is responsible for the raising and lowering of the colors every day. Below is the weekly flag rooster.
+                </p>
+                <a href='https://citadelits-my.sharepoint.com/:x:/g/personal/crom_nation_citadel_edu/EaBQzBh2tAhFpRcTNtaK2sAB0cj5xFxvrHKeXJ54nW-A2Q'><button>Check Flag Rooster</button></a>
+            </td>
+        </tr>
+    </table>
 
 
-                <h1>Flag Rooster</h1>
-                <p><a href="https://citadelits-my.sharepoint.com/:x:/g/personal/crom_nation_citadel_edu/EaBQzBh2tAhFpRcTNtaK2sAB0cj5xFxvrHKeXJ54nW-A2Q?e=YeGEss">Flag Rooster Link</a></p>
 
+
+
+
+    <!-- Two Image Body -->
+    <table class="twoImageBox">
+        <tr>
+            <td colspan="2">
+                <h1>Palmetto Battery Photo Library</h1>
+                <p>A comprehensive collection of photos from Palmetto Battery during the 2021-2022 school year.</p>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <a href="PBPhotoGallery.html">
+                    <img src="images_gallery/img_gallery_parents_day_parade_1.png" alt="Parent's Day Parade 2021">
+                </a>
+                <p>Parent's Day Parade 2021</p>
+            </td>
+            <td>
+                <a href="PBPhotoGallery.html"></a>
+                    <img src="images_gallery/img_gallery_kelly_cup1.png" alt="Kelly Cup 2021">
+                </a>
+                <p>Kelly Cup 2021</p>
             </td>
         </tr>
     </table>
 
     <!-- Footer -->
     <footer>
-        <table class="registrar">
+        <table class="footerBox">
             <tr>
-                <th style="readme" colspan="4">
-                    <p style = "font-size: 10px;">
-                        This is an unofficial website for the Freshman Class of 2025, from Palmetto Battery. This website has no official connection, recognition, or endorsement from The Citadel, the South Carolina Corp of Cadets, 5th Battalion, the Palmetto Battery, or any other organization.
+                <td style="width: 40%">
+                    <h2>About This Website</h2>
+                    <p>This website was created by lead programmer and developer Cadet Rom. This website's domain and existance is funded by Cadet Rom, through the use of his own personal funds and the small amount of money gained from website ads.</p>
+                    <p>Contact Email: crom@citadel.edu</p>
+                </td>
+                <td style="width: 60%">
 
-                        <br>
-                        <br>
-
-                        * = Upperclassman Requested
-
-                        <br>
-                        <br>
-
-                        Website Programmed / Domain Named Owned By: Cadet Private Rom
-
-                        <br>
-                        <br>
-
-                        Cadet Private Rom's Email: crom@citadel.edu
-
-                    </p>
-                </th>
+                </td>
             </tr>
         </table>
     </footer>
 
-    <!-- Stops Most Common People From Inspecting Code -->
-    <script>
-        var isNS = (navigator.appName == "Netscape") ? 1 : 0;
-        if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
-        function mischandler(){
-        return false;
-        }
-        function mousehandler(e){
-        var myevent = (isNS) ? e : event;
-        var eventbutton = (isNS) ? myevent.which : myevent.button;
-        if((eventbutton==2)||(eventbutton==3)) return false;
-        }
-        document.oncontextmenu = mischandler;
-        document.onmousedown = mousehandler;
-        document.onmouseup = mousehandler;
-    
-        document.onkeydown = function(e) 
-        {
-            if(event.keyCode == 123) {
-                return false;
-            }
-            if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-               return false;
-            }
-            if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-               return false;
-            }
-            if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-               return false;
-            }
-            if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-               return false;
-            }
-        }
-
-    </script>
-
-
 </body>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+</script>
 </html>
