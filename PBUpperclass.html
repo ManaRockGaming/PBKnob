@@ -33,11 +33,10 @@ body
     font-family: Gunplay;
     background:#5672e1;
     color: white;
-
+    font-size: 0.95vw;
     padding: 0;
     border: 0;
     outline: 0;
-    font-size: 100%;
     vertical-align: baseline;
 }
 
@@ -111,16 +110,23 @@ body
 .register  {
             width: 100%;
             background-color: #5672e1;
+            table-layout:fixed;
             }
 
 .register th   {
                 background-color: white;
                 color: black;
                 border: 5px solid black;
+
+                overflow: hidden; 
+                text-overflow: ellipsis; 
+                word-wrap: break-word;
                 }
 
-
-
+img {
+    max-width: 100%;
+    height: auto;
+    }
 
 
 
