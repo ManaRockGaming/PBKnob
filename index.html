@@ -48,6 +48,7 @@ body
             position: fixed;
             display: inline-block;
             font-size: 2.0vw;
+            z-index: 100;
             }
 
 .dropdown-content   {
@@ -107,17 +108,19 @@ body
             transform: translateX(-50%);
             top: 10vh;
             position: absolute;
+            z-index: -1;
             }
 
 .titleSubText   {
                 font-family: GunMetl;
-                font-size: 4vw;
+                font-size: 5vw;
                 color: black;
                 left: 50%;
                 transform: translateX(-50%);
                 top: 26vh;
                 position: absolute;
                 text-align: center;
+                display: block;
                 }
 
 .titleVideo {
@@ -128,7 +131,7 @@ body
             right: 0;
             top: 0;
             bottom: 0;
-            z-index: -1;
+            z-index: -2;
             background:#3a159c;
             opacity:0.45;
             }
@@ -196,7 +199,13 @@ img {
 @font-face { font-family: Gunplay3D; src: url('gunplay 3d.ttf'); } 
 @font-face { font-family: GunMetl; src: url('gunmetl.ttf'); } 
 
-
+@media (max-width: 640px) 
+{
+    .titleSubText
+    {
+        display: none;
+    }
+}
 
 
 </style>
